@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '@*87z3_$l=y@cssoc9&$gr!0b7jpc^8(0(!q(1p&c=%m(0yno0'  # Consider using your secret key
+SECRET_KEY = ' '  # Consider using your secret key
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -91,10 +91,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'collegemanagement',
-        'USER': 'devendra',
+        'USER': ' ',
         'PASSWORD': 'your_secure_password',
         'HOST': 'localhost',
-        'PORT': '5432',
+        'PORT': ' ',
     },
     'sqlite': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -161,8 +161,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 
-EMAIL_HOST_USER = os.environ.get('teamdevendrapatidar@gmail.com') 
-EMAIL_HOST_PASSWORD = os.environ.get('sqjgvwqvuzowdhjp')
+EMAIL_HOST_USER = os.environ.get('enter your mail here') 
+EMAIL_HOST_PASSWORD = os.environ.get('enter your password')
 EMAIL_USE_TLS = True
 # DEFAULT_FROM_EMAIL = "School Management System <admin@admin.com>"
 
